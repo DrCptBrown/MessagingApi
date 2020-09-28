@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "309d8e21-009a-4074-9e35-82868a4f2117",
+		"name": "MessagingAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44326/api/message",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44326",
+					"path": [
+						"api",
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44326/api/message/138d90f3-861c-4208-862d-f24bd044967c",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44326",
+					"path": [
+						"api",
+						"message",
+						"138d90f3-861c-4208-862d-f24bd044967c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Username\": \"DrCptBrown\", \n\t\"Subject\": \"I love this app 2\", \n\t\"Message\": \"This is the best app i have ever written 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44326/api/message",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44326",
+					"path": [
+						"api",
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Username\": \"DrCptBrown\", \n\t\"Subject\": \"No no this is the best app\", \n\t\"Message\": \"Best app ever\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44326/api/message/138d90f3-861c-4208-862d-f24bd044967c",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44326",
+					"path": [
+						"api",
+						"message",
+						"138d90f3-861c-4208-862d-f24bd044967c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44326/api/message/aa440108-bd81-4b75-8d7d-c4094ba94f23",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44326",
+					"path": [
+						"api",
+						"message",
+						"aa440108-bd81-4b75-8d7d-c4094ba94f23"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
